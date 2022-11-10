@@ -102,7 +102,7 @@ for i in range(1, 16):
         if descr is None:
             descr = "-"
         name = name.replace("_", "\_")
-
+        descr = descr.replace("_", "\_")
         ## Exception handlings
         if i == 5:
             if "location" in name:
