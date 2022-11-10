@@ -64,21 +64,15 @@ for i in range(1, 16):
 '''
 \\begin{center}
 \\begin{longtable}{l | l l l l }
-\\small
 '''
 )
     f.write("\caption{" + group_names[i] + " : PV lists}\n")
-    f.write("\label{tab:" + group_names[i] + "_PV_list}\n")
+    f.write("\label{tab:" + group_names[i] + "_PV_list} \\\ \n")
 
     f.write(
 '''
-\hline
-\multicolumn{1}{|c|}{\\textbf{PV Name}} &
-\multicolumn{1}{c|}{\\textbf{Description}} &
-\multicolumn{1}{c|}{\\textbf{smpl\_mode\_id}} &
-\multicolumn{1}{c|}{\\textbf{smpl\_val}} &
-\multicolumn{1}{c|}{\\textbf{smpl\_per}} \\\ \hline 
-\endfirsthead
+
+\hline \multicolumn{1}{|c|}{\\textbf{PV Name}} & \multicolumn{1}{c|}{\\textbf{Description}} & \multicolumn{1}{c|}{\\textbf{smpl\_mode\_id}} & \multicolumn{1}{c|}{\\textbf{smpl\_val}} & \multicolumn{1}{c|}{\\textbf{smpl\_per}} \\\ \hline \endfirsthead
 
 \multicolumn{5}{c}%
 {{\\bfseries \\tablename\ \\thetable{} -- continued from previous page}} \\\
