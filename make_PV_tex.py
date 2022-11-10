@@ -75,7 +75,7 @@ for i in range(1, 16):
 \hline \multicolumn{1}{|c|}{\\textbf{PV Name}} & \multicolumn{1}{c|}{\\textbf{Description}} & \multicolumn{1}{c|}{\\textbf{smpl\_mode\_id}} & \multicolumn{1}{c|}{\\textbf{smpl\_val}} & \multicolumn{1}{c|}{\\textbf{smpl\_per}} \\\ \hline \endfirsthead
 
 \multicolumn{5}{c}%
-{{\\bfseries \\tablename\ \\thetable{} -- continued from previous page}} \\\
+{{\\bfseries \\tablename\ \\thetable{} -- continued from previous page}}
 \multicolumn{1}{|c|}{\\textbf{PV Name}} &
 \multicolumn{1}{c|}{\\textbf{Description}} &
 \multicolumn{1}{c|}{\\textbf{smpl\_mode\_id}} &
