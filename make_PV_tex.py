@@ -63,7 +63,7 @@ for i in range(1, 16):
     f.write(
 '''
 \\begin{center}
-\\begin{longtable}{l | l l l l }
+\\begin{longtable}{c | c c c c }
 '''
 )
     f.write("\caption{" + group_names[i] + " : PV lists}\n")
