@@ -97,6 +97,6 @@ PV Name & Description & smpl_mode_id & smpl_val & smpl_per \\\ \n
 \end{tabular}
 '''
 )
-    f.write("\caption{" + group_names[i] + "} : PV lists}\n")
+    f.write("\caption{" + group_names[i] + " : PV lists}\n")
     f.write("\label{tab:" + group_names[i] + "_PV_list}\n")
     f.write("\end{table}\n")
