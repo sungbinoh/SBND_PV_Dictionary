@@ -66,7 +66,7 @@ for i in range(1, 16):
 \centering
 \\begin{tabular}{c | c c c c}
 \hline
-PV Name & Description & smpl_mode_id & smpl_val & smpl_per \\\ \n
+PV Name & Description & smpl\_mode\_id & smpl\_val & smpl\_per \\\ \n
 \hline
 '''
 )
@@ -80,9 +80,7 @@ PV Name & Description & smpl_mode_id & smpl_val & smpl_per \\\ \n
         smpl_per = PV[5]
         if descr is None:
             descr = "-"
-        #print(i)
-        #print(name)
-        #print(descr)
+        name = name.replace("_", "\_")
         f.write(name + " & " +descr + " & ")
         f.write(str(smpl_mode_id))
         f.write(" & ")
