@@ -27,13 +27,33 @@ Group ID & System name & Description \\
 \label{tab:system_list}
 \end{table}
 
-\begin{table}[ptb]
-\centering
-\begin{tabular}{c | c c c c}
-\hline
-PV Name & Description & smpl\_mode\_id & smpl\_val & smpl\_per \\ 
+\begin{center}
+\begin{longtable}{l | l l l l }
+\caption{gizmo : PV lists}
+\label{tab:gizmo_PV_list}
 
 \hline
+\multicolumn{1}{|c|}{\textbf{PV Name}} &
+\multicolumn{1}{c|}{\textbf{Description}} &
+\multicolumn{1}{c|}{\textbf{smpl\_mode\_id}} &
+\multicolumn{1}{c|}{\textbf{smpl\_val}} &
+\multicolumn{1}{c|}{\textbf{smpl\_per}} \\ \hline 
+\endfirsthead
+
+\multicolumn{5}{c}%
+{{\bfseries \tablename\ \thetable{} -- continued from previous page}} \\multicolumn{1}{|c|}{\textbf{PV Name}} &
+\multicolumn{1}{c|}{\textbf{Description}} &
+\multicolumn{1}{c|}{\textbf{smpl\_mode\_id}} &
+\multicolumn{1}{c|}{\textbf{smpl\_val}} &
+\multicolumn{1}{c|}{\textbf{smpl\_per}} \\ \hline
+\endhead
+
+\hline \multicolumn{5}{|r|}{{Continued on next page}} \\ \hline
+\endfoot
+
+\hline \hline
+\endlastfoot
+
 sbnd\_gizmo/res & impedance & 2 & 0.1 & 3.0\\ 
 sbnd\_gizmo/th & threshold & 2 & 0.1 & 3.0\\ 
 sbnd\_gizmo/mag & magnitude & 2 & 0.1 & 3.0\\ 
@@ -41,18 +61,40 @@ sbnd\_gizmo/ii & current & 2 & 0.1 & 3.0\\
 sbnd\_gizmo/qq & charge & 2 & 0.1 & 3.0\\ 
 
 \hline
-\end{tabular}
+\end{longtable}
+\end{center}
+
 \caption{gizmo : PV lists}
 \label{tab:gizmo_PV_list}
 \end{table}
 
-\begin{table}[ptb]
-\centering
-\begin{tabular}{c | c c c c}
-\hline
-PV Name & Description & smpl\_mode\_id & smpl\_val & smpl\_per \\ 
+\begin{center}
+\begin{longtable}{l | l l l l }
+\caption{tpc\_readout\_power : PV lists}
+\label{tab:tpc\_readout\_power_PV_list}
 
 \hline
+\multicolumn{1}{|c|}{\textbf{PV Name}} &
+\multicolumn{1}{c|}{\textbf{Description}} &
+\multicolumn{1}{c|}{\textbf{smpl\_mode\_id}} &
+\multicolumn{1}{c|}{\textbf{smpl\_val}} &
+\multicolumn{1}{c|}{\textbf{smpl\_per}} \\ \hline 
+\endfirsthead
+
+\multicolumn{5}{c}%
+{{\bfseries \tablename\ \thetable{} -- continued from previous page}} \\multicolumn{1}{|c|}{\textbf{PV Name}} &
+\multicolumn{1}{c|}{\textbf{Description}} &
+\multicolumn{1}{c|}{\textbf{smpl\_mode\_id}} &
+\multicolumn{1}{c|}{\textbf{smpl\_val}} &
+\multicolumn{1}{c|}{\textbf{smpl\_per}} \\ \hline
+\endhead
+
+\hline \multicolumn{5}{|r|}{{Continued on next page}} \\ \hline
+\endfoot
+
+\hline \hline
+\endlastfoot
+
 sbnd\_tpc\_readout\_01/outputMeasurementCurrent & TPC Readout Crate 01 Currrent Reading & 2 & 0.01 & 0.2\\ 
 sbnd\_tpc\_readout\_01/outputSupervisionBehavior & TPC Readout Crate 01 Output Behavior (bit mask) & 2 & 0.01 & 0.2\\ 
 sbnd\_tpc\_readout\_01/outputMeasurementSenseVoltage & TPC Readout Crate 01 Sense Voltage Reading & 2 & 0.01 & 0.2\\ 
@@ -238,32 +280,76 @@ sbnd\_pds\_readout\_rack1\_vme02/fan\_speed2 & PDS-R1 VME 02 Fan Pack 2 Speed & 
 sbnd\_pds\_readout\_rack1\_vme02/temperature & PDS-R1 VME 02 Temperature & 2 & 0.0 & 60000.0\\ 
 
 \hline
-\end{tabular}
+\end{longtable}
+\end{center}
+
 \caption{tpc\_readout\_power : PV lists}
 \label{tab:tpc\_readout\_power_PV_list}
 \end{table}
 
-\begin{table}[ptb]
-\centering
-\begin{tabular}{c | c c c c}
-\hline
-PV Name & Description & smpl\_mode\_id & smpl\_val & smpl\_per \\ 
+\begin{center}
+\begin{longtable}{l | l l l l }
+\caption{cryo : PV lists}
+\label{tab:cryo_PV_list}
 
 \hline
+\multicolumn{1}{|c|}{\textbf{PV Name}} &
+\multicolumn{1}{c|}{\textbf{Description}} &
+\multicolumn{1}{c|}{\textbf{smpl\_mode\_id}} &
+\multicolumn{1}{c|}{\textbf{smpl\_val}} &
+\multicolumn{1}{c|}{\textbf{smpl\_per}} \\ \hline 
+\endfirsthead
+
+\multicolumn{5}{c}%
+{{\bfseries \tablename\ \thetable{} -- continued from previous page}} \\multicolumn{1}{|c|}{\textbf{PV Name}} &
+\multicolumn{1}{c|}{\textbf{Description}} &
+\multicolumn{1}{c|}{\textbf{smpl\_mode\_id}} &
+\multicolumn{1}{c|}{\textbf{smpl\_val}} &
+\multicolumn{1}{c|}{\textbf{smpl\_per}} \\ \hline
+\endhead
+
+\hline \multicolumn{5}{|r|}{{Continued on next page}} \\ \hline
+\endfoot
+
+\hline \hline
+\endlastfoot
+
 
 \hline
-\end{tabular}
+\end{longtable}
+\end{center}
+
 \caption{cryo : PV lists}
 \label{tab:cryo_PV_list}
 \end{table}
 
-\begin{table}[ptb]
-\centering
-\begin{tabular}{c | c c c c}
-\hline
-PV Name & Description & smpl\_mode\_id & smpl\_val & smpl\_per \\ 
+\begin{center}
+\begin{longtable}{l | l l l l }
+\caption{slowcontrols : PV lists}
+\label{tab:slowcontrols_PV_list}
 
 \hline
+\multicolumn{1}{|c|}{\textbf{PV Name}} &
+\multicolumn{1}{c|}{\textbf{Description}} &
+\multicolumn{1}{c|}{\textbf{smpl\_mode\_id}} &
+\multicolumn{1}{c|}{\textbf{smpl\_val}} &
+\multicolumn{1}{c|}{\textbf{smpl\_per}} \\ \hline 
+\endfirsthead
+
+\multicolumn{5}{c}%
+{{\bfseries \tablename\ \thetable{} -- continued from previous page}} \\multicolumn{1}{|c|}{\textbf{PV Name}} &
+\multicolumn{1}{c|}{\textbf{Description}} &
+\multicolumn{1}{c|}{\textbf{smpl\_mode\_id}} &
+\multicolumn{1}{c|}{\textbf{smpl\_val}} &
+\multicolumn{1}{c|}{\textbf{smpl\_per}} \\ \hline
+\endhead
+
+\hline \multicolumn{5}{|r|}{{Continued on next page}} \\ \hline
+\endfoot
+
+\hline \hline
+\endlastfoot
+
 sbnd\_tpc\_readout\_01/temperature & TPC Readout Crate 01 Temperature & 2 & 0.1 & 10.0\\ 
 sbnd\_tpc\_readout\_02/temperature & TPC Readout Crate 02 Temperature & 2 & 0.1 & 10.0\\ 
 sbnd\_tpc\_readout\_03/temperature & TPC Readout Crate 03 Temperature & 2 & 0.1 & 10.0\\ 
@@ -347,19 +433,41 @@ sbnd\_crt/temperature & CRT PL512 Temperature & 2 & 0.0 & 60000.0\\
 sbnd\_crt/interlock & CRT NUM Interlock & 2 & 0.0 & 60000.0\\ 
 
 \hline
-\end{tabular}
+\end{longtable}
+\end{center}
+
 \caption{slowcontrols : PV lists}
 \label{tab:slowcontrols_PV_list}
 \end{table}
 
-\begin{table}[ptb]
-\centering
-\begin{tabular}{c | c c c c}
-\hline
-PV Name & Description & smpl\_mode\_id & smpl\_val & smpl\_per \\ 
+\begin{center}
+\begin{longtable}{l | l l l l }
+\caption{gps : PV lists}
+\label{tab:gps_PV_list}
 
 \hline
-sbnd\_gps/location & Global Co&ouml;rdinates & 2 & 0.01 & 1.0\\ 
+\multicolumn{1}{|c|}{\textbf{PV Name}} &
+\multicolumn{1}{c|}{\textbf{Description}} &
+\multicolumn{1}{c|}{\textbf{smpl\_mode\_id}} &
+\multicolumn{1}{c|}{\textbf{smpl\_val}} &
+\multicolumn{1}{c|}{\textbf{smpl\_per}} \\ \hline 
+\endfirsthead
+
+\multicolumn{5}{c}%
+{{\bfseries \tablename\ \thetable{} -- continued from previous page}} \\multicolumn{1}{|c|}{\textbf{PV Name}} &
+\multicolumn{1}{c|}{\textbf{Description}} &
+\multicolumn{1}{c|}{\textbf{smpl\_mode\_id}} &
+\multicolumn{1}{c|}{\textbf{smpl\_val}} &
+\multicolumn{1}{c|}{\textbf{smpl\_per}} \\ \hline
+\endhead
+
+\hline \multicolumn{5}{|r|}{{Continued on next page}} \\ \hline
+\endfoot
+
+\hline \hline
+\endlastfoot
+
+sbnd\_gps/location & Global Coordinates & 2 & 0.01 & 1.0\\ 
 sbnd\_gps/message & GPS Message & 2 & 0.01 & 1.0\\ 
 sbnd\_gps/messagestatus & Status Message & 2 & 0.01 & 1.0\\ 
 sbnd\_gps/oscillatorquality & Oscillator Quality Code & 2 & 0.01 & 1.0\\ 
@@ -367,18 +475,40 @@ sbnd\_gps/sigmapps & PPS Error Estimate & 2 & 0.01 & 1.0\\
 sbnd\_gps/status & GPS Overall Status Flag & 1 & 0.01 & 1.0\\ 
 
 \hline
-\end{tabular}
+\end{longtable}
+\end{center}
+
 \caption{gps : PV lists}
 \label{tab:gps_PV_list}
 \end{table}
 
-\begin{table}[ptb]
-\centering
-\begin{tabular}{c | c c c c}
-\hline
-PV Name & Description & smpl\_mode\_id & smpl\_val & smpl\_per \\ 
+\begin{center}
+\begin{longtable}{l | l l l l }
+\caption{drifthv : PV lists}
+\label{tab:drifthv_PV_list}
 
 \hline
+\multicolumn{1}{|c|}{\textbf{PV Name}} &
+\multicolumn{1}{c|}{\textbf{Description}} &
+\multicolumn{1}{c|}{\textbf{smpl\_mode\_id}} &
+\multicolumn{1}{c|}{\textbf{smpl\_val}} &
+\multicolumn{1}{c|}{\textbf{smpl\_per}} \\ \hline 
+\endfirsthead
+
+\multicolumn{5}{c}%
+{{\bfseries \tablename\ \thetable{} -- continued from previous page}} \\multicolumn{1}{|c|}{\textbf{PV Name}} &
+\multicolumn{1}{c|}{\textbf{Description}} &
+\multicolumn{1}{c|}{\textbf{smpl\_mode\_id}} &
+\multicolumn{1}{c|}{\textbf{smpl\_val}} &
+\multicolumn{1}{c|}{\textbf{smpl\_per}} \\ \hline
+\endhead
+
+\hline \multicolumn{5}{|r|}{{Continued on next page}} \\ \hline
+\endfoot
+
+\hline \hline
+\endlastfoot
+
 sbnd\_drift\_hv/model & Heinzinger Serial Number & 2 & 0.0 & 1800.0\\ 
 sbnd\_drift\_hv/ver & Heinzinger software version & 2 & 0.0 & 1800.0\\ 
 sbnd\_drift\_hv/aver & Average number of recording & 2 & 0.0 & 1800.0\\ 
@@ -392,18 +522,40 @@ sbnd\_drift\_hv/set\_volt & Set Output Voltage & 2 & 0.0 & 1800.0\\
 sbnd\_drift\_hv/set\_curr & Set Output Current Limit & 2 & 0.0 & 1800.0\\ 
 
 \hline
-\end{tabular}
+\end{longtable}
+\end{center}
+
 \caption{drifthv : PV lists}
 \label{tab:drifthv_PV_list}
 \end{table}
 
-\begin{table}[ptb]
-\centering
-\begin{tabular}{c | c c c c}
-\hline
-PV Name & Description & smpl\_mode\_id & smpl\_val & smpl\_per \\ 
+\begin{center}
+\begin{longtable}{l | l l l l }
+\caption{daq : PV lists}
+\label{tab:daq_PV_list}
 
 \hline
+\multicolumn{1}{|c|}{\textbf{PV Name}} &
+\multicolumn{1}{c|}{\textbf{Description}} &
+\multicolumn{1}{c|}{\textbf{smpl\_mode\_id}} &
+\multicolumn{1}{c|}{\textbf{smpl\_val}} &
+\multicolumn{1}{c|}{\textbf{smpl\_per}} \\ \hline 
+\endfirsthead
+
+\multicolumn{5}{c}%
+{{\bfseries \tablename\ \thetable{} -- continued from previous page}} \\multicolumn{1}{|c|}{\textbf{PV Name}} &
+\multicolumn{1}{c|}{\textbf{Description}} &
+\multicolumn{1}{c|}{\textbf{smpl\_mode\_id}} &
+\multicolumn{1}{c|}{\textbf{smpl\_val}} &
+\multicolumn{1}{c|}{\textbf{smpl\_per}} \\ \hline
+\endhead
+
+\hline \multicolumn{5}{|r|}{{Continued on next page}} \\ \hline
+\endfoot
+
+\hline \hline
+\endlastfoot
+
 sbnd\_cdaq/temperature & V & 2 & 0.0 & 1800.0\\ 
 sbnd\_crt\_daq/temperature & V & 2 & 0.0 & 1800.0\\ 
 sbnd\_pds\_daq/temperature & V & 2 & 0.0 & 1800.0\\ 
@@ -442,32 +594,76 @@ sbnd\_tpc1\_pdu/current & Rack TPC1 PDU Current & 2 & 0.0 & 1800.0\\
 sbnd\_tpc1\_pdu/voltage & Rack TPC1 PDU Current & 2 & 0.0 & 1800.0\\ 
 
 \hline
-\end{tabular}
+\end{longtable}
+\end{center}
+
 \caption{daq : PV lists}
 \label{tab:daq_PV_list}
 \end{table}
 
-\begin{table}[ptb]
-\centering
-\begin{tabular}{c | c c c c}
-\hline
-PV Name & Description & smpl\_mode\_id & smpl\_val & smpl\_per \\ 
+\begin{center}
+\begin{longtable}{l | l l l l }
+\caption{pdu : PV lists}
+\label{tab:pdu_PV_list}
 
 \hline
+\multicolumn{1}{|c|}{\textbf{PV Name}} &
+\multicolumn{1}{c|}{\textbf{Description}} &
+\multicolumn{1}{c|}{\textbf{smpl\_mode\_id}} &
+\multicolumn{1}{c|}{\textbf{smpl\_val}} &
+\multicolumn{1}{c|}{\textbf{smpl\_per}} \\ \hline 
+\endfirsthead
+
+\multicolumn{5}{c}%
+{{\bfseries \tablename\ \thetable{} -- continued from previous page}} \\multicolumn{1}{|c|}{\textbf{PV Name}} &
+\multicolumn{1}{c|}{\textbf{Description}} &
+\multicolumn{1}{c|}{\textbf{smpl\_mode\_id}} &
+\multicolumn{1}{c|}{\textbf{smpl\_val}} &
+\multicolumn{1}{c|}{\textbf{smpl\_per}} \\ \hline
+\endhead
+
+\hline \multicolumn{5}{|r|}{{Continued on next page}} \\ \hline
+\endfoot
+
+\hline \hline
+\endlastfoot
+
 
 \hline
-\end{tabular}
+\end{longtable}
+\end{center}
+
 \caption{pdu : PV lists}
 \label{tab:pdu_PV_list}
 \end{table}
 
-\begin{table}[ptb]
-\centering
-\begin{tabular}{c | c c c c}
-\hline
-PV Name & Description & smpl\_mode\_id & smpl\_val & smpl\_per \\ 
+\begin{center}
+\begin{longtable}{l | l l l l }
+\caption{anodehv : PV lists}
+\label{tab:anodehv_PV_list}
 
 \hline
+\multicolumn{1}{|c|}{\textbf{PV Name}} &
+\multicolumn{1}{c|}{\textbf{Description}} &
+\multicolumn{1}{c|}{\textbf{smpl\_mode\_id}} &
+\multicolumn{1}{c|}{\textbf{smpl\_val}} &
+\multicolumn{1}{c|}{\textbf{smpl\_per}} \\ \hline 
+\endfirsthead
+
+\multicolumn{5}{c}%
+{{\bfseries \tablename\ \thetable{} -- continued from previous page}} \\multicolumn{1}{|c|}{\textbf{PV Name}} &
+\multicolumn{1}{c|}{\textbf{Description}} &
+\multicolumn{1}{c|}{\textbf{smpl\_mode\_id}} &
+\multicolumn{1}{c|}{\textbf{smpl\_val}} &
+\multicolumn{1}{c|}{\textbf{smpl\_per}} \\ \hline
+\endhead
+
+\hline \multicolumn{5}{|r|}{{Continued on next page}} \\ \hline
+\endfoot
+
+\hline \hline
+\endlastfoot
+
 sbnd\_wb\_u\_nw/volt\_set & Induction U Plane NW HV Setting & 2 & 0.0 & 1800.0\\ 
 sbnd\_wb\_u\_ne/volt\_set & Induction U Plane NE HV Setting & 2 & 0.0 & 1800.0\\ 
 sbnd\_cs\_nw/volt\_set & CS NW HV Setting & 2 & 0.0 & 1800.0\\ 
@@ -670,32 +866,76 @@ sbnd\_east\_hv/mainPower & West Plane Main Power & 2 & 0.0 & 1800.0\\
 sbnd\_west\_hv/mainPower & West Plane Main Power & 2 & 0.0 & 1800.0\\ 
 
 \hline
-\end{tabular}
+\end{longtable}
+\end{center}
+
 \caption{anodehv : PV lists}
 \label{tab:anodehv_PV_list}
 \end{table}
 
-\begin{table}[ptb]
-\centering
-\begin{tabular}{c | c c c c}
-\hline
-PV Name & Description & smpl\_mode\_id & smpl\_val & smpl\_per \\ 
+\begin{center}
+\begin{longtable}{l | l l l l }
+\caption{rack\_pdu : PV lists}
+\label{tab:rack\_pdu_PV_list}
 
 \hline
+\multicolumn{1}{|c|}{\textbf{PV Name}} &
+\multicolumn{1}{c|}{\textbf{Description}} &
+\multicolumn{1}{c|}{\textbf{smpl\_mode\_id}} &
+\multicolumn{1}{c|}{\textbf{smpl\_val}} &
+\multicolumn{1}{c|}{\textbf{smpl\_per}} \\ \hline 
+\endfirsthead
+
+\multicolumn{5}{c}%
+{{\bfseries \tablename\ \thetable{} -- continued from previous page}} \\multicolumn{1}{|c|}{\textbf{PV Name}} &
+\multicolumn{1}{c|}{\textbf{Description}} &
+\multicolumn{1}{c|}{\textbf{smpl\_mode\_id}} &
+\multicolumn{1}{c|}{\textbf{smpl\_val}} &
+\multicolumn{1}{c|}{\textbf{smpl\_per}} \\ \hline
+\endhead
+
+\hline \multicolumn{5}{|r|}{{Continued on next page}} \\ \hline
+\endfoot
+
+\hline \hline
+\endlastfoot
+
 
 \hline
-\end{tabular}
+\end{longtable}
+\end{center}
+
 \caption{rack\_pdu : PV lists}
 \label{tab:rack\_pdu_PV_list}
 \end{table}
 
-\begin{table}[ptb]
-\centering
-\begin{tabular}{c | c c c c}
-\hline
-PV Name & Description & smpl\_mode\_id & smpl\_val & smpl\_per \\ 
+\begin{center}
+\begin{longtable}{l | l l l l }
+\caption{wib\_femb : PV lists}
+\label{tab:wib\_femb_PV_list}
 
 \hline
+\multicolumn{1}{|c|}{\textbf{PV Name}} &
+\multicolumn{1}{c|}{\textbf{Description}} &
+\multicolumn{1}{c|}{\textbf{smpl\_mode\_id}} &
+\multicolumn{1}{c|}{\textbf{smpl\_val}} &
+\multicolumn{1}{c|}{\textbf{smpl\_per}} \\ \hline 
+\endfirsthead
+
+\multicolumn{5}{c}%
+{{\bfseries \tablename\ \thetable{} -- continued from previous page}} \\multicolumn{1}{|c|}{\textbf{PV Name}} &
+\multicolumn{1}{c|}{\textbf{Description}} &
+\multicolumn{1}{c|}{\textbf{smpl\_mode\_id}} &
+\multicolumn{1}{c|}{\textbf{smpl\_val}} &
+\multicolumn{1}{c|}{\textbf{smpl\_per}} \\ \hline
+\endhead
+
+\hline \multicolumn{5}{|r|}{{Continued on next page}} \\ \hline
+\endfoot
+
+\hline \hline
+\endlastfoot
+
 sbnd\_wib101\_femb1/temp & Temperature & 2 & 0.0 & 1800.0\\ 
 sbnd\_wib101\_femb1/vcc & Vcc & 2 & 0.0 & 1800.0\\ 
 sbnd\_wib101\_femb1/v1 & Voltage 1 & 2 & 0.0 & 1800.0\\ 
@@ -3122,18 +3362,40 @@ sbnd\_wib406\_femb4/pwr & Power status & 2 & 0.0 & 1800.0\\
 sbnd\_wib406\_femb4/switch & on/off switch status & 2 & 0.0 & 1800.0\\ 
 
 \hline
-\end{tabular}
+\end{longtable}
+\end{center}
+
 \caption{wib\_femb : PV lists}
 \label{tab:wib\_femb_PV_list}
 \end{table}
 
-\begin{table}[ptb]
-\centering
-\begin{tabular}{c | c c c c}
-\hline
-PV Name & Description & smpl\_mode\_id & smpl\_val & smpl\_per \\ 
+\begin{center}
+\begin{longtable}{l | l l l l }
+\caption{pmthv : PV lists}
+\label{tab:pmthv_PV_list}
 
 \hline
+\multicolumn{1}{|c|}{\textbf{PV Name}} &
+\multicolumn{1}{c|}{\textbf{Description}} &
+\multicolumn{1}{c|}{\textbf{smpl\_mode\_id}} &
+\multicolumn{1}{c|}{\textbf{smpl\_val}} &
+\multicolumn{1}{c|}{\textbf{smpl\_per}} \\ \hline 
+\endfirsthead
+
+\multicolumn{5}{c}%
+{{\bfseries \tablename\ \thetable{} -- continued from previous page}} \\multicolumn{1}{|c|}{\textbf{PV Name}} &
+\multicolumn{1}{c|}{\textbf{Description}} &
+\multicolumn{1}{c|}{\textbf{smpl\_mode\_id}} &
+\multicolumn{1}{c|}{\textbf{smpl\_val}} &
+\multicolumn{1}{c|}{\textbf{smpl\_per}} \\ \hline
+\endhead
+
+\hline \multicolumn{5}{|r|}{{Continued on next page}} \\ \hline
+\endfoot
+
+\hline \hline
+\endlastfoot
+
 sbnd\_pmt\_hv:ModelName & CAEN Power Supply Model & 2 & 0.0 & 1800.0\\ 
 sbnd\_pmt\_hv:SwRelease & CAEN PS Softwware Release & 2 & 0.0 & 1800.0\\ 
 sbnd\_pmt\_hv:GenSignCfg & General Status Flags & 2 & 0.0 & 1800.0\\ 
@@ -7208,18 +7470,40 @@ sbnd\_west\_hv/serial & West Plane Serial Number & 2 & 0.0 & 1800.0\\
 sbnd\_west\_hv/group & West Plane Group Number & 2 & 0.0 & 1800.0\\ 
 
 \hline
-\end{tabular}
+\end{longtable}
+\end{center}
+
 \caption{pmthv : PV lists}
 \label{tab:pmthv_PV_list}
 \end{table}
 
-\begin{table}[ptb]
-\centering
-\begin{tabular}{c | c c c c}
-\hline
-PV Name & Description & smpl\_mode\_id & smpl\_val & smpl\_per \\ 
+\begin{center}
+\begin{longtable}{l | l l l l }
+\caption{crt\_ps : PV lists}
+\label{tab:crt\_ps_PV_list}
 
 \hline
+\multicolumn{1}{|c|}{\textbf{PV Name}} &
+\multicolumn{1}{c|}{\textbf{Description}} &
+\multicolumn{1}{c|}{\textbf{smpl\_mode\_id}} &
+\multicolumn{1}{c|}{\textbf{smpl\_val}} &
+\multicolumn{1}{c|}{\textbf{smpl\_per}} \\ \hline 
+\endfirsthead
+
+\multicolumn{5}{c}%
+{{\bfseries \tablename\ \thetable{} -- continued from previous page}} \\multicolumn{1}{|c|}{\textbf{PV Name}} &
+\multicolumn{1}{c|}{\textbf{Description}} &
+\multicolumn{1}{c|}{\textbf{smpl\_mode\_id}} &
+\multicolumn{1}{c|}{\textbf{smpl\_val}} &
+\multicolumn{1}{c|}{\textbf{smpl\_per}} \\ \hline
+\endhead
+
+\hline \multicolumn{5}{|r|}{{Continued on next page}} \\ \hline
+\endfoot
+
+\hline \hline
+\endlastfoot
+
 sbnd\_crt\_readout/curr\_read & - & 2 & 0.0 & 60000.0\\ 
 sbnd\_crt\_readout/outputbehavior\_rw & - & 2 & 0.0 & 60000.0\\ 
 sbnd\_crt\_readout/outputconfig\_rw & - & 2 & 0.0 & 60000.0\\ 
@@ -7291,18 +7575,40 @@ sbnd\_crt\_readout\_11/ps\_status & - & 2 & 0.0 & 60000.0\\
 sbnd\_crt\_readout\_11/ps\_status\_string & - & 2 & 0.0 & 60000.0\\ 
 
 \hline
-\end{tabular}
+\end{longtable}
+\end{center}
+
 \caption{crt\_ps : PV lists}
 \label{tab:crt\_ps_PV_list}
 \end{table}
 
-\begin{table}[ptb]
-\centering
-\begin{tabular}{c | c c c c}
-\hline
-PV Name & Description & smpl\_mode\_id & smpl\_val & smpl\_per \\ 
+\begin{center}
+\begin{longtable}{l | l l l l }
+\caption{ArapucaHV : PV lists}
+\label{tab:ArapucaHV_PV_list}
 
 \hline
+\multicolumn{1}{|c|}{\textbf{PV Name}} &
+\multicolumn{1}{c|}{\textbf{Description}} &
+\multicolumn{1}{c|}{\textbf{smpl\_mode\_id}} &
+\multicolumn{1}{c|}{\textbf{smpl\_val}} &
+\multicolumn{1}{c|}{\textbf{smpl\_per}} \\ \hline 
+\endfirsthead
+
+\multicolumn{5}{c}%
+{{\bfseries \tablename\ \thetable{} -- continued from previous page}} \\multicolumn{1}{|c|}{\textbf{PV Name}} &
+\multicolumn{1}{c|}{\textbf{Description}} &
+\multicolumn{1}{c|}{\textbf{smpl\_mode\_id}} &
+\multicolumn{1}{c|}{\textbf{smpl\_val}} &
+\multicolumn{1}{c|}{\textbf{smpl\_per}} \\ \hline
+\endhead
+
+\hline \multicolumn{5}{|r|}{{Continued on next page}} \\ \hline
+\endfoot
+
+\hline \hline
+\endlastfoot
+
 sbnd\_arapuca\_hv\_port1\_ch0/get\_volt & get_volt_port1_ch0 & 2 & 0.0 & 1800.0\\ 
 sbnd\_arapuca\_hv\_port2\_ch0/get\_volt & get_volt_port2_ch0 & 2 & 0.0 & 1800.0\\ 
 sbnd\_arapuca\_hv\_port3\_ch0/get\_volt & get_volt_port3_ch0 & 2 & 0.0 & 1800.0\\ 
@@ -7433,7 +7739,9 @@ sbnd\_arapuca\_hv\_port3\_ch7/set\_gain & set_gain_port3_ch7 & 2 & 0.0 & 1800.0\
 sbnd\_arapuca\_hv\_port4\_ch7/set\_gain & set_gain_port4_ch7 & 2 & 0.0 & 1800.0\\ 
 
 \hline
-\end{tabular}
+\end{longtable}
+\end{center}
+
 \caption{ArapucaHV : PV lists}
 \label{tab:ArapucaHV_PV_list}
 \end{table}

@@ -62,12 +62,38 @@ for i in range(1, 16):
     channel = cursor.fetchall()
     f.write(
 '''
-\\begin{table}[ptb]
-\centering
-\\begin{tabular}{c | c c c c}
+\\begin{center}
+\\begin{longtable}{l | l l l l }
+'''
+)
+    f.write("\caption{" + group_names[i] + " : PV lists}\n")
+    f.write("\label{tab:" + group_names[i] + "_PV_list}\n")
+
+    f.write(
+'''
 \hline
-PV Name & Description & smpl\_mode\_id & smpl\_val & smpl\_per \\\ \n
-\hline
+\multicolumn{1}{|c|}{\\textbf{PV Name}} &
+\multicolumn{1}{c|}{\\textbf{Description}} &
+\multicolumn{1}{c|}{\\textbf{smpl\_mode\_id}} &
+\multicolumn{1}{c|}{\\textbf{smpl\_val}} &
+\multicolumn{1}{c|}{\\textbf{smpl\_per}} \\\ \hline 
+\endfirsthead
+
+\multicolumn{5}{c}%
+{{\\bfseries \\tablename\ \\thetable{} -- continued from previous page}} \\\
+\multicolumn{1}{|c|}{\\textbf{PV Name}} &
+\multicolumn{1}{c|}{\\textbf{Description}} &
+\multicolumn{1}{c|}{\\textbf{smpl\_mode\_id}} &
+\multicolumn{1}{c|}{\\textbf{smpl\_val}} &
+\multicolumn{1}{c|}{\\textbf{smpl\_per}} \\\ \hline
+\endhead
+
+\hline \multicolumn{5}{|r|}{{Continued on next page}} \\\ \hline
+\endfoot
+
+\hline \hline
+\endlastfoot
+
 '''
 )
 
@@ -81,6 +107,12 @@ PV Name & Description & smpl\_mode\_id & smpl\_val & smpl\_per \\\ \n
         if descr is None:
             descr = "-"
         name = name.replace("_", "\_")
+
+        ## Exception handlings
+        if i == 5:
+            if "location" in name:
+                descr = "Global Coordinates"
+
         f.write(name + " & " +descr + " & ")
         f.write(str(smpl_mode_id))
         f.write(" & ")
@@ -92,7 +124,9 @@ PV Name & Description & smpl\_mode\_id & smpl\_val & smpl\_per \\\ \n
     f.write(
 '''
 \hline
-\end{tabular}
+\end{longtable}
+\end{center}
+
 '''
 )
     f.write("\caption{" + group_names[i] + " : PV lists}\n")
