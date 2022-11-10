@@ -64,7 +64,7 @@ for i in range(1, 16):
 '''
 \\begin{table}[ptb]
 \centering
-\\begin{tabular}{c | c c}
+\\begin{tabular}{c | c c c c}
 \hline
 PV Name & Description & smpl_mode_id & smpl_val & smpl_per \\\ \n
 \hline
