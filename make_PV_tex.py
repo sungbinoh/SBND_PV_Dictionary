@@ -129,6 +129,3 @@ for i in range(1, 16):
 
 '''
 )
-    f.write("\caption{" + group_names[i] + " : PV lists}\n")
-    f.write("\label{tab:" + group_names[i] + "_PV_list}\n")
-    f.write("\end{table}\n")
